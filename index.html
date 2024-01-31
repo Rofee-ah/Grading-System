@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GradingSystem</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="box1">
+            <div class="dash">Student DashBoard </div>
+            <button class="buttons" onclick="student()"> Student Name</button> <br>
+            <button class="buttons" onclick="grade()">Grade</button> <br>
+            <button class="buttons" onclick="average()">Average</button>
+            <button class="buttons" onclick="final()" id="fina">Total</button>
+            <button class="buttons" onclick="overview()">Overview</button>
+        </div>
+    
+        <div class="box2">
+            <h1 class="seco"> Secondary School Grading System </h1>
+            <label for="name" class="label"> FULLNAME</label>
+            <input type="text" class="inputs" id="fullname"> 
+            <table class="head1">
+                <tr> 
+                    <th class="head"> Subject</th>
+                    <th class="head"> Test1</th>
+                    <th class="head">Test2</th>
+                    <th class="head">Exam</th>
+                    <th class="head">Total</th>   
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td><input type="text" class="input" id="input"></td>
+                    <td><input type="text" class="input" id="inputs" ></td>
+                    <td><input type="text" class="input"  id="inputss" ></td>
+                    <td><input type="button" class="button" value="Total" onclick="button()" id="total"></td>
+                </tr>
+                <tr>
+                    <td>Mathemathetics</td>
+                    <td><input type="text" class="input" id="math"></td>
+                    <td><input type="text" class="input" id="maths" ></td>
+                    <td><input type="text" class="input"  id="mathss" ></td>
+                    <td><input type="button" class="button" value="Total" onclick="buttons()" id="totals"></td>
+                </tr>
+                <tr>
+                    <td>Biology</td>
+                    <td><input type="text" class="input"  id="bio" ></td>
+                    <td><input type="text" class="input"  id="bios" ></td>
+                    <td><input type="text" class="input"  id="bioss" ></td>
+                    <td><input type="button" class="button" value="Total" onclick="biology()" id="logy"></td>
+                </tr>
+                <tr>
+                    <td>Agriculture</td>
+                    <td><input type="text" class="input"  id="agric" ></td>
+                    <td><input type="text" class="input"  id="agrics" ></td>
+                    <td><input type="text" class="input"  id="agricss" ></td>
+                    <td><input type="button" class="button"value="Total" onclick="agric()" id="culture"></td>
+                </tr>
+                <tr>
+                    <td>Physics</td>
+                    <td><input type="text" class="input"  id="phy" ></td>
+                    <td><input type="text" class="input"  id="phys" ></td>
+                    <td><input type="text" class="input"  id="physs" ></td>
+                    <td><input type="button" class="button" value="Total" onclick="physics()" id="sics"></td>
+                </tr>
+                <tr>
+                    <td>Chemistry</td>
+                    <td><input type="text" class="input"  id="chem" ></td>
+                    <td><input type="text" class="input"  id="chems" ></td>
+                    <td><input type="text" class="input"  id="chemss" ></td>
+                    <td><input type="button" class="button" value="Total" onclick="chemistry()" id="try"></td>
+                </tr>
+                <tr>
+                    <td>Economics</td>
+                    <td><input type="text" class="input"  id="eco" ></td>
+                    <td><input type="text" class="input"  id="ecos" ></td>
+                    <td><input type="text" class="input"  id="ecoss" ></td>
+                    <td><input type="button" class="button" value="Total" onclick="economics()" id="mics"></td>
+                </tr>
+                <tr>
+                    <td>Pratical</td>
+                    <td><input type="text" class="input"  id="pra" ></td>
+                    <td><input type="text" class="input"  id="pras" ></td>
+                    <td><input type="text" class="input"  id="prass" ></td>
+                    <td><input type="button" class="button" value="Total" onclick="pratical()" id="cal"></td>
+                </tr>
+                <tr>
+                    <td>Food Science</td>
+                    <td><input type="text" class="input"  id="food" ></td>
+                    <td><input type="text" class="input"  id="foods" ></td>
+                    <td><input type="text" class="input"  id="foodss" ></td>
+                    <td><input type="button" class="button" value="Total" onclick="foodsci()" id="science"></td>
+                </tr>
+                <tr>
+                    <td>HomeEconomic</td>
+                    <td><input type="text" class="input"  id="home" ></td>
+                    <td><input type="text" class="input"  id="homes" ></td>
+                    <td><input type="text" class="input"  id="homess" ></td>
+                    <td><input type="button" class="button" value="Total" onclick="home()" id="ecoo"></td>
+                </tr>
+                <tr>
+                    <td>Education</td>
+                    <td><input type="text" class="input"  id="edu" ></td>
+                    <td><input type="text" class="input"  id="edus" ></td>
+                    <td><input type="text" class="input"  id="eduss" ></td>
+                    <td><input type="button" class="button" value="Total" onclick="education()" id="cation"></td>
+                </tr>
+                <tr>
+                    <td>Geography</td>
+                    <td><input type="text" class="input"  id="geo" ></td>
+                    <td><input type="text" class="input"  id="geos" ></td>
+                    <td><input type="text" class="input"  id="geoss" ></td>
+                    <td><input type="button" class="button" value="Total" onclick="geography()" id="graphy"></td>
+                </tr>
+                <tr>
+                    <td>Computer</td>
+                    <td><input type="text" class="input"  id="com" ></td>
+                    <td><input type="text" class="input"  id="coms" ></td>
+                    <td><input type="text" class="input"  id="comss" ></td>
+                    <td><input type="button" class="button" value="Total" onclick="computer()" id="puter"></td>
+                </tr>
+            </table>
+
+
+
+    
+        </div>
+        <div class="box3">
+            <div class="display">
+                <button class="buttonss"> Student Name</button> <br>
+                <input type="text" class="inp1" id="dent">
+            </div>
+            <div class="display">
+                <button class="buttonss">Grade</button> <br>
+                <input type="text" class="inp1" id="grad">
+            </div>
+            <div class="display">
+                <button class="buttonss">Average</button>
+                <input type="text" class="inp1" id="avera" value="Your Average Score is ">
+            </div> 
+            <div class="display">
+                <button class="buttonss">Total</button>
+                <input type="text" class="inp1" id="inp1" value="Your Total Score is ">
+            </div>
+            <div class="display">
+                <button class="buttonss">Overview</button>
+                <input type="text" class="inp1" id="view">
+            </div>
+        </div>
+    </div> 
+</body>
+<script src="script.js"></script>
+</html>
